@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: read-du
-        image: giantswarm/tiny-tools
+        image: harbor.qyvideo.net/kubernetes-monitor/tiny-tools:latest
         imagePullPolicy: Always
         # FIXME threshold via env var
         # The
@@ -52,7 +52,7 @@ spec:
         - name: metrics
           mountPath: /tmp
       - name: caddy
-        image: dockermuenster/caddy:0.9.3
+        image: harbor.qyvideo.net/kubernetes-monitor/caddy:0.9.3
         command:
         - "caddy"
         - "-port=9102"

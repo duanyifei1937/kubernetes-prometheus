@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: alertmanager
-        image: quay.io/prometheus/alertmanager:v0.7.1
+        image: harbor.qyvideo.net/kubernetes-monitor/alertmanager:v0.15.1
         args:
           - '-config.file=/etc/alertmanager/config.yml'
           - '-storage.path=/alertmanager'
